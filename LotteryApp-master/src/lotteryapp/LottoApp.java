@@ -35,14 +35,14 @@ public class LottoApp {
         name = JOptionPane.showInputDialog(null, "Please enter if 'lotto', 'plus1', or 'plus2'");
 
         for (int i = 0; i < 5; i++) {
-            userGuess[0][i] = Integer.parseInt(JOptionPane.showInputDialog(null, "Please enter your first line"));
+            userGuess[0][i] = Integer.parseInt(JOptionPane.showInputDialog(null, "Guess number: 1.\nPlease enter digit number "+(i+1)));
 
         }
         for (int j = 0; j < 5; j++) {
-            userGuess[1][j] = Integer.parseInt(JOptionPane.showInputDialog(null, "Please enter your second line"));
+            userGuess[1][j] = Integer.parseInt(JOptionPane.showInputDialog(null, "Guess number: 2.\nPlease enter digit number "+(j+1)));
         }
         for (int k = 0; k < 5; k++) {
-            userGuess[2][k] = Integer.parseInt(JOptionPane.showInputDialog(null, "Please enter your third line"));
+            userGuess[2][k] = Integer.parseInt(JOptionPane.showInputDialog(null, "Guess number: 3.\nPlease enter digit number "+(k+1)));
         }
 
         // set userGuess and name
