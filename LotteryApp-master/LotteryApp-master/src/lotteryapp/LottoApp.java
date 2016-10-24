@@ -29,9 +29,8 @@ public class LottoApp {
         name = new String();
 
         // object
-        Lotto myLotto = new Lotto();
-        AppGUI myAppGUI = new AppGUI();
-        myAppGUI.setVisible(true);    
+        Lotto myLotto = new Lotto(); 
+        
         // input
         name = JOptionPane.showInputDialog(null, "Please enter if 'lotto', 'plus1', or 'plus2'");
 
