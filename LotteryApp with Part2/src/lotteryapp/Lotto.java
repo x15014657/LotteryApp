@@ -14,18 +14,98 @@ import java.util.ArrayList;
 public class Lotto {
 
     //declare 1D arrays of integers
-    private ArrayList<Lotto> aList;
     private String name;
-    private int lottoNum[];
-    private int lottoNum1[];
-    private int lottoNum2[];
-    private int lottoNum3[];
-    private int userGuess[][];
-    private int winNum;
-    private int winNum1;
-    private int winNum2;
+    private int lottoNumLotto[];
+    private int lottoNumPlus1[];
+    private int lottoNumPlus2[];
+    private int userGuess[];
+    private int winNumLotto;
+    private int winNumPlus1;
+    private int winNumPlus2;
 
-    // constructor 
+    public Lotto() {
+        this.name="";
+        this.lottoNumLotto= new int[5];
+        this.lottoNumPlus1= new int[5];
+        this.lottoNumPlus2= new int[5];
+        this.userGuess= new int[5];
+        this.winNumLotto=0;
+        this.winNumPlus1=0;
+        this.winNumPlus2=0;
+    }
+
+    public Lotto(String name, int[] lottoNumLotto, int[] lottoNumPlus1, int[] lottoNumPlus2, int[] userGuess, int winNumLotto, int winNumPlus1, int winNumPlus2) {
+        this.name = name;
+        this.lottoNumLotto = lottoNumLotto;
+        this.lottoNumPlus1 = lottoNumPlus1;
+        this.lottoNumPlus2 = lottoNumPlus2;
+        this.userGuess = userGuess;
+        this.winNumLotto = winNumLotto;
+        this.winNumPlus1 = winNumPlus1;
+        this.winNumPlus2 = winNumPlus2;
+    }
+    
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int[] getLottoNumLotto() {
+        return lottoNumLotto;
+    }
+
+    public void setLottoNumLotto(int[] lottoNumLotto) {
+        this.lottoNumLotto = lottoNumLotto;
+    }
+
+    public int[] getLottoNumPlus1() {
+        return lottoNumPlus1;
+    }
+
+    public void setLottoNumPlus1(int[] lottoNumPlus1) {
+        this.lottoNumPlus1 = lottoNumPlus1;
+    }
+
+    public int[] getLottoNumPlus2() {
+        return lottoNumPlus2;
+    }
+
+    public void setLottoNumPlus2(int[] lottoNumPlus2) {
+        this.lottoNumPlus2 = lottoNumPlus2;
+    }
+
+    public int[] getUserGuess() {
+        return userGuess;
+    }
+
+    public void setUserGuess(int[] userGuess) {
+        this.userGuess = userGuess;
+    }
+
+    public int getWinNumLotto() {
+        return winNumLotto;
+    }
+
+    public int getWinNumPlus1() {
+        return winNumPlus1;
+    }
+
+    public int getWinNumPlus2() {
+        return winNumPlus2;
+    }
+
+    public void compute(){
+        
+    }
+    
+    
+    
+
+}
+    /*// constructor 
     public Lotto() {
         aList = new ArrayList<>();
         name = new String();
@@ -104,3 +184,4 @@ public class Lotto {
     }
 
 }
+*/
